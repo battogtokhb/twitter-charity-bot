@@ -3,8 +3,9 @@ import tweepy
 from tweepy.streaming import StreamListener
 import authentication as auth
 import pandas as pd
+from pandas.io.json import json_normalize
 import numpy as np
-
+import json
 
 # Test: tweet out a message to our Twitter account
 
@@ -22,20 +23,24 @@ import numpy as np
 class MyStreamListener(StreamListener):
 
     def __init__(self):
-        self.tweets_dataframe = pd.DataFrame(data=[], columns=['Tweets'])
+        self.tweets_dataframe = pd.DataFrame()
+        self.tweets_raw_json = []
         self.counter = 0
 
     def on_data(self, data):
+        print (self.counter)
         try:
-            #print("we have data from " + str(self.counter))
-            self.tweets_dataframe[self.counter] = str(data)
+            self.tweets_raw_json.append(json.loads(data))
             self.counter += 1
-            if self.counter > 10:
+            if self.counter < 10:
                 # only want to print first 10 tweets
-                return False
+                return True
         except BaseException as e:
             print("Data error: %s" % str(e))
-        return True
+        # print (self.tweets_raw_json[0]) <-- exmaple raw json
+        # Normalize JSON 'flattens' the JSON to detail with nested columns
+        self.tweets_dataframe = pd.DataFrame(json_normalize(self.tweets_raw_json), columns=['created_at', 'text', 'user.screen_name', 'retweeted'])
+        return False
 
     def on_error(self, status_code):
         if status == 420:
@@ -85,12 +90,11 @@ class TwitterStreamer():
 
 
 # Test if this code works so far (spoiler alert: it works (for me at least))
-track_list = ['RT donate,day when']
+track_list = ['RT to donate,day when']
 myStreamer = TwitterStreamer()
 #tweet_analyzer = TweetAnalyzer()
 myStreamer.StreamTweets(track_list)
 #api = myStreamer.get_api()
 tweets = myStreamer.get_tweets()
 
-for tweet in tweets:
-    print(tweet)
+print (tweets['text'].head(n=10)) #head returns the first n rows
