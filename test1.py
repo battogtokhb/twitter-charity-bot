@@ -17,7 +17,15 @@ import json
     # print(api.me().name)
     # api.update_status(status='It is my birthday! Happy birthday to me!')
 
-# Test: try to use Twitter streaming
+
+
+# broad class to get tweets with a track_list
+class GetTweets():
+    def get_tweets(self, track_list):
+        myStreamer = TwitterStreamer()
+        myStreamer.stream_tweets(track_list)
+        return myStreamer.get_tweets()
+
 
 # This creates a stream listener that prints tweets as they come in
 class MyStreamListener(StreamListener):
@@ -28,7 +36,7 @@ class MyStreamListener(StreamListener):
         self.counter = 0
 
     def on_data(self, data):
-        print (self.counter)
+        #print (self.counter)
         try:
             self.tweets_raw_json.append(json.loads(data))
             self.counter += 1
@@ -69,11 +77,9 @@ class TwitterStreamer():
         self.myStreamListener = MyStreamListener()
 
     # For finding and processing live tweets
-    def StreamTweets(self, track_list):
-        myAuth = self.twitter_auth
+    def stream_tweets(self, track_list):
         # create stream listener and filter by the track_list
-
-        myStream = tweepy.Stream(myAuth, self.myStreamListener)
+        myStream = tweepy.Stream(self.twitter_auth, self.myStreamListener)
         myStream.filter(track=track_list)
 
 
@@ -84,17 +90,16 @@ class TwitterStreamer():
         return self.myStreamListener.get_data()
 
 # Class to analyze tweets
-#class TweetAnalyzer():
-    #def analyze_tweets(self, tweets):
+class TweetAnalyzer():
+    def print_tweets(self, tweets, headers):
+        print (tweets[headers].head(n=10)) #head returns the first n rows
 
 
 
-# Test if this code works so far (spoiler alert: it works (for me at least))
+# Test if this code works so far
 track_list = ['RT to donate,day when']
-myStreamer = TwitterStreamer()
-#tweet_analyzer = TweetAnalyzer()
-myStreamer.StreamTweets(track_list)
+tweets = GetTweets().get_tweets(track_list)
 #api = myStreamer.get_api()
-tweets = myStreamer.get_tweets()
 
-print (tweets['text'].head(n=10)) #head returns the first n rows
+myAnalyzer = TweetAnalyzer()
+myAnalyzer.print_tweets(tweets, ['text', 'user.screen_name'])
