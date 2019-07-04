@@ -26,6 +26,11 @@ class GetTweets():
         myStreamer.stream_tweets(track_list)
         return myStreamer.get_tweets()
 
+    def get_api(self):
+        auth = TwitterAuthenticator().authenticate()
+        return tweepy.API(auth)
+
+
 
 # This creates a stream listener that prints tweets as they come in
 class MyStreamListener(StreamListener):
@@ -37,6 +42,7 @@ class MyStreamListener(StreamListener):
 
     def on_data(self, data):
         #print (self.counter)
+        print(type(data))
         try:
             self.tweets_raw_json.append(json.loads(data))
             self.counter += 1
@@ -97,9 +103,23 @@ class TweetAnalyzer():
 
 
 # Test if this code works so far
-track_list = ['RT to donate,day when']
-tweets = GetTweets().get_tweets(track_list)
-#api = myStreamer.get_api()
 
-myAnalyzer = TweetAnalyzer()
-myAnalyzer.print_tweets(tweets, ['text', 'user.screen_name'])
+#track_list = ['RT to donate,well']
+myTweeter = GetTweets()
+#tweets = myTweeter.get_tweets(track_list)
+
+#myAnalyzer = TweetAnalyzer()
+#myAnalyzer.print_tweets(tweets, ['text', 'user.screen_name'])
+
+
+# This section is to test historical tweets - right now it just prints tweets
+
+api = myTweeter.get_api()
+tweet_df = pd.DataFrame()
+tweet_raw = []
+# Finds the most recent tweets including the search keys and adds them to a list
+for tweet in tweepy.Cursor(api.search, q='RT to donate').items(5):
+    tweet_raw.append(tweet._json)
+
+tweet_df = pd.DataFrame(json_normalize(tweet_raw), columns=['text', 'user.screen_name', 'retweeted'])
+print(tweet_df['text'].head(n=10))
