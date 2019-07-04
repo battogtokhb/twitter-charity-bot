@@ -41,8 +41,6 @@ class MyStreamListener(StreamListener):
         self.counter = 0
 
     def on_data(self, data):
-        #print (self.counter)
-        print(type(data))
         try:
             self.tweets_raw_json.append(json.loads(data))
             self.counter += 1
@@ -53,7 +51,14 @@ class MyStreamListener(StreamListener):
             print("Data error: %s" % str(e))
         # print (self.tweets_raw_json[0]) <-- exmaple raw json
         # Normalize JSON 'flattens' the JSON to detail with nested columns
-        self.tweets_dataframe = pd.DataFrame(json_normalize(self.tweets_raw_json), columns=['created_at', 'text', 'user.screen_name', 'retweeted'])
+        self.tweets_dataframe = pd.DataFrame(json_normalize(self.tweets_raw_json), columns=
+        ['text',
+        'user.screen_name',
+        'created_at',
+        'favorite_count',
+        'in_reply_to_status_id',
+        'retweeted_status',
+        'matching_rules'])
         return False
 
     def on_error(self, status_code):
@@ -104,12 +109,11 @@ class TweetAnalyzer():
 
 # Test if this code works so far
 
-#track_list = ['RT to donate,well']
 myTweeter = GetTweets()
-#tweets = myTweeter.get_tweets(track_list)
+myAnalyzer = TweetAnalyzer()
 
-#myAnalyzer = TweetAnalyzer()
-#myAnalyzer.print_tweets(tweets, ['text', 'user.screen_name'])
+#track_list = ['RT to donate,well']
+#tweets = myTweeter.get_tweets(track_list)
 
 
 # This section is to test historical tweets - right now it just prints tweets
@@ -118,8 +122,15 @@ api = myTweeter.get_api()
 tweet_df = pd.DataFrame()
 tweet_raw = []
 # Finds the most recent tweets including the search keys and adds them to a list
-for tweet in tweepy.Cursor(api.search, q='RT to donate').items(5):
+for tweet in tweepy.Cursor(api.search, q='RT donate').items(5):
     tweet_raw.append(tweet._json)
 
-tweet_df = pd.DataFrame(json_normalize(tweet_raw), columns=['text', 'user.screen_name', 'retweeted'])
-print(tweet_df['text'].head(n=10))
+tweet_df = pd.DataFrame(json_normalize(tweet_raw), columns=
+    ['text',
+    'user.screen_name',
+    'created_at',
+    'favorite_count',
+    'in_reply_to_status_id',
+    'retweeted_status',
+    'matching_rules'])
+myAnalyzer.print_tweets(tweet_df, ['text', 'user.screen_name', 'created_at'])
