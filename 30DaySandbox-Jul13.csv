@@ -1,54 +1,117 @@
-	text	user.screen_name	user.verified	user.followers_count	entities.hashtags	created_at	favorite_count	retweet_count
-0	For every 100,000 retweets this gets Bell will donate $5000 towards mental health initiatives. Lets see how much we can raise! #BellLetsTalk	BeII_LetsTaIk	False	3131	[{'text': 'BellLetsTalk', 'indices': [127, 140]}]	Wed Jan 30 04:42:05 +0000 2019	14563	85047
-1	Reminder that for every #RallyForRose shirt we sell between now and the #RoseParade at #SDCC on 7/20, we’ll donate… https://t.co/znjRHhPJPS	TheNerdsofColor	False	31980	[{'text': 'RallyForRose', 'indices': [24, 37]}, {'text': 'RoseParade', 'indices': [72, 83]}, {'text': 'SDCC', 'indices': [87, 92]}]	Thu Jul 11 00:02:38 +0000 2019	29	17
+	extended_tweet.full_text	text	user.screen_name	user.verified	user.followers_count	entities.hashtags	created_at	favorite_count	retweet_count
+0	For every 100,000 retweets this gets Bell will donate $5000 towards mental health initiatives. Lets see how much we can raise! #BellLetsTalk	For every 100,000 retweets this gets Bell will donate $5000 towards mental health initiatives. Lets see how much we can raise! #BellLetsTalk	BeII_LetsTaIk	False	3131	[{'text': 'BellLetsTalk', 'indices': [127, 140]}]	Wed Jan 30 04:42:05 +0000 2019	14563	85047
+1	Reminder that for every #RallyForRose shirt we sell between now and the #RoseParade at #SDCC on 7/20, we’ll donate a portion to @NAPAWF! Even if you’re not in San Diego, you can still show your support! https://t.co/IcyN6LNZn8 https://t.co/5NO5AjRMP1	Reminder that for every #RallyForRose shirt we sell between now and the #RoseParade at #SDCC on 7/20, we’ll donate… https://t.co/znjRHhPJPS	TheNerdsofColor	False	31980	[{'text': 'RallyForRose', 'indices': [24, 37]}, {'text': 'RoseParade', 'indices': [72, 83]}, {'text': 'SDCC', 'indices': [87, 92]}]	Thu Jul 11 00:02:38 +0000 2019	29	17
 2	"😳 ONE PERSON WINS ALL OF THIS...
 
 ...and this isn’t even everything.
 
+For every $5 you donate, we’ll give you one free entry. Winner announced Saturday 7/20/19.
+
+Oh... and if this gets 🔄’d at least 100 times, someone gets a free entry. 🙌
+
+DONATE ⤵️
+https://t.co/3EpIzNYNm2 https://t.co/42vCRdR6AL"	"😳 ONE PERSON WINS ALL OF THIS...
+
+...and this isn’t even everything.
+
 For every $5 you donate, we’ll give you one f… https://t.co/uPeDw1negl"	CrackinWax	False	4649	[]	Fri Jul 12 01:47:11 +0000 2019	22	59
-3	The lovely @OtiMabuse has laid down the challenge. You do the dancing. We do the donating 1. Learn the move. 2. Sha… https://t.co/Li9ENnmvMq	Tesco	True	549722	[]	Tue Jul 09 11:03:07 +0000 2019	66	21
-4	We're partnering with @SSS_Foundation to help provide treatment options to those with scoliosis. You can help too b… https://t.co/9oMd0tWoWF	DePuySynthes	False	5117	[]	Fri Jul 12 19:16:58 +0000 2019	2	3
-5	WXNA is the non-profit of the month at @TNBrewWorks in July. TBW will donate $1 for every beer sold on Sundays in J… https://t.co/70Wldgmnxr	WXNAfm	False	2759	[]	Sat Jul 13 16:45:00 +0000 2019	2	1
-6	Next week marks the start of Dance Beats, supporting @CR_UK, @DiabetesUK and @TheBHF – learn the routine from… https://t.co/NQSPBwzQPY	tesconews	True	49671	[]	Fri Jul 12 15:30:00 +0000 2019	24	21
-7	For every guest who rides the Kilimanjaro Safari Expedition during opening week of Lion King, Disney will donate $2… https://t.co/xh3cJxQIZq	_laurengray__	False	433	[]	Sat Jul 13 15:30:02 +0000 2019	5	1
-8	For every RT we’ll donate $1, up to $1.5M, in support of first responders to the @GarySiniseFound (1.18.19 – 2.8.19… https://t.co/PCk72PPgFn	verizon	True	1659444	[]	Fri Jan 18 21:33:45 +0000 2019	51116	173227
-9	Thank you to each &amp; everyone for your donations in honor to Donnies Bday to ! It means a lot &amp; i‘m so #grateful ❤️… https://t.co/5DR0D74E5T	ElaHall617	False	2614	[{'text': 'grateful', 'indices': [110, 119]}]	Wed Jul 10 17:05:36 +0000 2019	12	7
+3	The lovely @OtiMabuse has laid down the challenge. You do the dancing. We do the donating 1. Learn the move. 2. Share with #TescoDanceBeats 3. We’ll donate £10 for every upload (up to max of 100K) to support @CR_UK, @Thebhf @diabetesuk T&amp;Cs: https://t.co/UoPBt2bvJO … https://t.co/yokSpIbw7z	The lovely @OtiMabuse has laid down the challenge. You do the dancing. We do the donating 1. Learn the move. 2. Sha… https://t.co/Li9ENnmvMq	Tesco	True	549722	[]	Tue Jul 09 11:03:07 +0000 2019	66	21
+4	We're partnering with @SSS_Foundation to help provide treatment options to those with scoliosis. You can help too by donating a selfie with @donateaphoto! For each photo donated we'll donate $1. Discover more: https://t.co/MwzHwktjeO https://t.co/JpVB5qBlml	We're partnering with @SSS_Foundation to help provide treatment options to those with scoliosis. You can help too b… https://t.co/9oMd0tWoWF	DePuySynthes	False	5117	[]	Fri Jul 12 19:16:58 +0000 2019	2	3
+5	"WXNA is the non-profit of the month at @TNBrewWorks in July. TBW will donate $1 for every beer sold on Sundays in July to WXNA! Good beer, good peeps, good cause? We'll drink to that! 
+
+809 Ewing Ave, right around the corner from Third Man Records. Belly up noon–8 p.m. tomorrow! https://t.co/1gA5H8n77l"	WXNA is the non-profit of the month at @TNBrewWorks in July. TBW will donate $1 for every beer sold on Sundays in J… https://t.co/70Wldgmnxr	WXNAfm	False	2759	[]	Sat Jul 13 16:45:00 +0000 2019	2	1
+6	"Next week marks the start of Dance Beats, supporting @CR_UK, @DiabetesUK and @TheBHF – learn the routine from @AstonMerrygold, post using #TescoDanceBeats and we’ll donate £10 for every post up to £100k. 
+
+Text DANCE to 70507 to give £5 [16+ only] T&amp;Cs: https://t.co/ya1gAhRCD0 https://t.co/5vCmtRLVst"	Next week marks the start of Dance Beats, supporting @CR_UK, @DiabetesUK and @TheBHF – learn the routine from… https://t.co/NQSPBwzQPY	tesconews	True	49671	[]	Fri Jul 12 15:30:00 +0000 2019	24	21
+7	For every guest who rides the Kilimanjaro Safari Expedition during opening week of Lion King, Disney will donate $2 to the lion recovery fund. We continue to stan.	For every guest who rides the Kilimanjaro Safari Expedition during opening week of Lion King, Disney will donate $2… https://t.co/xh3cJxQIZq	_laurengray__	False	433	[]	Sat Jul 13 15:30:02 +0000 2019	5	1
+8	For every RT we’ll donate $1, up to $1.5M, in support of first responders to the @GarySiniseFound (1.18.19 – 2.8.19). At age 5, NFL star @10AJMcCarron was in a jet ski accident. First responders were there to answer the call. Meet The Team That Wouldn’t Be Here. #AllOurThanks	For every RT we’ll donate $1, up to $1.5M, in support of first responders to the @GarySiniseFound (1.18.19 – 2.8.19… https://t.co/PCk72PPgFn	verizon	True	1659444	[]	Fri Jan 18 21:33:45 +0000 2019	51116	173227
+9	"Thank you to each &amp; everyone for your donations in honor to Donnies Bday to ! It means a lot &amp; i‘m so #grateful ❤️
+#DonniesBdayRaffle 💖 #BHLove
+I hope we‘ll collect a lot more 💰 in honor to Donnies Bday! 
+DONATE &amp; WIN 💞 ➡️ https://t.co/GEhBa0Z43S 
+Make DW’s Bday great again!🌟 https://t.co/jE8cCCqcuZ"	Thank you to each &amp; everyone for your donations in honor to Donnies Bday to ! It means a lot &amp; i‘m so #grateful ❤️… https://t.co/5DR0D74E5T	ElaHall617	False	2614	[{'text': 'grateful', 'indices': [110, 119]}]	Wed Jul 10 17:05:36 +0000 2019	12	7
 10	"Proud to announce our new initiative with @BCCare 👉🏼 #SpGridThatGives 
 
+We will donate £1,000 to Breast Cancer Care for every grid place gained by our SportPesa @racingpointf1 drivers 
+
+Find out more ➡️ https://t.co/gosWCoIidN https://t.co/I7jux8F0e9"	"Proud to announce our new initiative with @BCCare 👉🏼 #SpGridThatGives 
+
 We will donate £1,000 to Breast Cancer Care… https://t.co/Bo5sqfS5Wn"	SportPesa_UK	True	45046	[{'text': 'SpGridThatGives', 'indices': [53, 69]}]	Fri Jul 12 07:56:13 +0000 2019	105	27
-11	Are you an animal lover? Introducing the #PawSpritz now through July 28th! For every Spritz ordered, we will donate… https://t.co/MaKjT52rjI	RivaCrabhouse	False	798	[{'text': 'PawSpritz', 'indices': [41, 51]}]	Fri Jul 12 15:54:05 +0000 2019	6	4
-12	Are you an animal lover? Introducing the #PawSpritz July 12th through July 28th. For every Spritz ordered, we will… https://t.co/Dt05TfKqBY	RivaCrabhouse	False	798	[{'text': 'PawSpritz', 'indices': [41, 51]}]	Mon Jul 08 16:15:14 +0000 2019	6	5
-13	We are holding a matching fundraiser for the LDICP -- every dollar contributed will be doubled to support the missi… https://t.co/ASTmL1aZ0t	AndrewVachss	False	2763	[]	Sat Jul 13 13:01:34 +0000 2019	3	3
-14	help save the bees because they’re endangered! we literally cannot live without bee’s. go to @Pornhub new beesexual… https://t.co/lZEbBryf7W	Abella_Danger	True	992591	[]	Wed Apr 17 18:01:09 +0000 2019	7618	1802
-15	Join us in support of @BristolPride 🌈 Over the next week, for every new person who joins our online community using… https://t.co/TuNboZiZBj	Research4People	False	8799	[]	Mon Jul 08 11:32:33 +0000 2019	46	6
-16	Working at Assurant, read more about Attending Natop by booth #1301 to see how we can help reduce risk from before… https://t.co/yWkFOTIUnO	EncarniEncarni	False	4	[]	Sat Jul 06 17:47:19 +0000 2019	1	1
-17	We are extremely excited to be attending  @stithiansshow on Monday. This year we are holding a pet 'paw' trait cont… https://t.co/CBQDj2bKvE	Coodes	False	3117	[]	Thu Jul 11 15:15:14 +0000 2019	9	4
-18	BLINKS IF YOU DON'T HAVE TIME TO CAST YOUR VOTE USING UR VARIOUS SNS ACCTS IN MWAVE!! WE'LL HELP YOU DO THE THING..… https://t.co/7gyEs4768u	steffy_bacx	False	262	[]	Fri Jul 12 06:02:06 +0000 2019	3	7
+11	Are you an animal lover? Introducing the #PawSpritz now through July 28th! For every Spritz ordered, we will donate a $1 to @pawschicago to help support homeless animals!! Treat yourself to a Spritz, or two, to help save our furry friends 🐶🐾🐱#PAWSTreatYourself https://t.co/y5HVqe5qFn	Are you an animal lover? Introducing the #PawSpritz now through July 28th! For every Spritz ordered, we will donate… https://t.co/MaKjT52rjI	RivaCrabhouse	False	798	[{'text': 'PawSpritz', 'indices': [41, 51]}]	Fri Jul 12 15:54:05 +0000 2019	6	4
+12	Are you an animal lover? Introducing the #PawSpritz July 12th through July 28th. For every Spritz ordered, we will donate a $1 to @pawschicago to help support homeless animals!! Treat yourself to a Spritz, or two, to help save our furry friends 🐶🐾🐱#PAWSTreatYourself https://t.co/GdUPlsJAnN	Are you an animal lover? Introducing the #PawSpritz July 12th through July 28th. For every Spritz ordered, we will… https://t.co/Dt05TfKqBY	RivaCrabhouse	False	798	[{'text': 'PawSpritz', 'indices': [41, 51]}]	Mon Jul 08 16:15:14 +0000 2019	6	5
+13	We are holding a matching fundraiser for the LDICP -- every dollar contributed will be doubled to support the mission of making better laws for child protection. Check it out and add your power! https://t.co/2eRErHZ0Ox	We are holding a matching fundraiser for the LDICP -- every dollar contributed will be doubled to support the missi… https://t.co/ASTmL1aZ0t	AndrewVachss	False	2763	[]	Sat Jul 13 13:01:34 +0000 2019	3	3
+14	help save the bees because they’re endangered! we literally cannot live without bee’s. go to @Pornhub new beesexual channel and watch the funny bee videos, for every view, they will donate to bee saving charities🐝❤️ @thekiranoir https://t.co/L3YObEpVvd	help save the bees because they’re endangered! we literally cannot live without bee’s. go to @Pornhub new beesexual… https://t.co/lZEbBryf7W	Abella_Danger	True	992591	[]	Wed Apr 17 18:01:09 +0000 2019	7618	1802
+15	"Join us in support of @BristolPride 🌈 Over the next week, for every new person who joins our online community using our #BristolPride link below, we'll donate £0.50 to the Peace House project. Sign up 👉 https://t.co/o48wmuVyuM
+
+More info on the blog – https://t.co/IbaNqIMR1N https://t.co/4dvzvBYMEW"	Join us in support of @BristolPride 🌈 Over the next week, for every new person who joins our online community using… https://t.co/TuNboZiZBj	Research4People	False	8799	[]	Mon Jul 08 11:32:33 +0000 2019	46	6
+16	Working at Assurant, read more about Attending Natop by booth #1301 to see how we can help reduce risk from before a resident moves in, to well after they move out. We'll also donate $25 to Move For Hunger for each attendee that stops by. https://t.co/OxXL8o0rJM	Working at Assurant, read more about Attending Natop by booth #1301 to see how we can help reduce risk from before… https://t.co/yWkFOTIUnO	EncarniEncarni	False	4	[]	Sat Jul 06 17:47:19 +0000 2019	1	1
+17	We are extremely excited to be attending  @stithiansshow on Monday. This year we are holding a pet 'paw' trait contest, where you'll get the chance to win either a £30 @PetsatHome voucher or @StAustellBrew voucher. For every entry we will donate £1 to @SowennaAppeal. https://t.co/q7V2LlQ6fJ	We are extremely excited to be attending  @stithiansshow on Monday. This year we are holding a pet 'paw' trait cont… https://t.co/CBQDj2bKvE	Coodes	False	3117	[]	Thu Jul 11 15:15:14 +0000 2019	9	4
+18	"BLINKS IF YOU DON'T HAVE TIME TO CAST YOUR VOTE USING UR VARIOUS SNS ACCTS IN MWAVE!! WE'LL HELP YOU DO THE THING..
+
+DONATE UR ACCT NOW SO VOTE FOR THIS DAY WILL NOT BE WASTED! 
+
+LET'S HELP EACH OTHER BLINKS!!
+
+#MGMAVOTE
+#BLACKPINK @ygofficialblink
+https://t.co/VMcKHsFPxk"	BLINKS IF YOU DON'T HAVE TIME TO CAST YOUR VOTE USING UR VARIOUS SNS ACCTS IN MWAVE!! WE'LL HELP YOU DO THE THING..… https://t.co/7gyEs4768u	steffy_bacx	False	262	[]	Fri Jul 12 06:02:06 +0000 2019	3	7
 19	"HELP BRING FOOD TO THIS CARDBOARD KITCHEN!
 
+We’re doing a CROWDFUND CUM DONATION DRIVE for The Cardboard Kitchen Project @CamdenFringe! Get store perks with every contribution PLUS a portion of your contribution will go to food bank @SufraNWLondon Donate: https://t.co/GAwi3eCrvS https://t.co/egQm2FTHKE"	"HELP BRING FOOD TO THIS CARDBOARD KITCHEN!
+
 We’re doing a CROWDFUND CUM DONATION DRIVE for The Cardboard Kitchen Pr… https://t.co/ZgDcqlkW11"	thefkcolab	False	89	[]	Sat Jul 13 00:34:24 +0000 2019	1	2
-20	When a wish is granted, we make friends for life. It was great meeting Wish Kid Tyler earlier this year and hearing… https://t.co/bdJWO5snxv	WWERollins	True	3577285	[]	Mon May 20 15:32:42 +0000 2019	5718	653
-21	Hello, people! To make #ExtremeRules2019 a bit more fun and wholesome, we will be organizing a charity betting pool… https://t.co/7Cz7puR3Z7	culleretes	False	72	[{'text': 'ExtremeRules2019', 'indices': [23, 40]}]	Sat Jul 13 00:05:36 +0000 2019	2	1
+20	When a wish is granted, we make friends for life. It was great meeting Wish Kid Tyler earlier this year and hearing his inspiring story! Use #FriendLikeMe and Disney will donate $5 for each post up to $1 million to support @MakeAWish https://t.co/FaKyqclkpN	When a wish is granted, we make friends for life. It was great meeting Wish Kid Tyler earlier this year and hearing… https://t.co/bdJWO5snxv	WWERollins	True	3577285	[]	Mon May 20 15:32:42 +0000 2019	5718	653
+21	"Hello, people! To make #ExtremeRules2019 a bit more fun and wholesome, we will be organizing a charity betting pool. For every match you guess wrong, you will directly donate to @SamiZayn's #SamiForSyria fund. Here you have the pool and more info about it!
+https://t.co/XhTgdVHDke"	Hello, people! To make #ExtremeRules2019 a bit more fun and wholesome, we will be organizing a charity betting pool… https://t.co/7Cz7puR3Z7	culleretes	False	72	[{'text': 'ExtremeRules2019', 'indices': [23, 40]}]	Sat Jul 13 00:05:36 +0000 2019	2	1
 22	"Proud to announce our new initiative with @BCCare 👉🏼 #SpGridThatGives 
 
+We will donate £1,000 to Breast Cancer Care for every grid place gained by our SportPesa @racingpointf1 drivers 
+
+Find out more ➡️ https://t.co/iZIBnCRCDO https://t.co/hPHbqtgaUx"	"Proud to announce our new initiative with @BCCare 👉🏼 #SpGridThatGives 
+
 We will donate £1,000 to Breast Cancer Care… https://t.co/23akY2gf8G"	SportPesa_IE	False	1557	[{'text': 'SpGridThatGives', 'indices': [53, 69]}]	Fri Jul 12 07:58:55 +0000 2019	6	1
-23	Excited to announce our #RBIForResearch campaign. For every RBI I get this year, we will be donating $1500 to the… https://t.co/zhKG8wAwr5	BusterPosey	True	513376	[{'text': 'RBIForResearch', 'indices': [24, 39]}]	Fri Mar 22 17:13:43 +0000 2019	2810	521
-24	GIVE the rainbow. TASTE the rainbow! 🌈 We’re teaming up with @TrueColorsUnite to help end youth homelessness in the… https://t.co/edXAy6pd71	Skittles	True	391955	[]	Mon Jun 24 13:45:29 +0000 2019	1587	435
-25	We are still making a push to keep raising bond money for the @bailfundnetwork . If you are at the… https://t.co/vdmnpwnFuh	migrantbailfund	False	438	[]	Sat Jul 13 01:44:27 +0000 2019	6	5
+23	Excited to announce our #RBIForResearch campaign. For every RBI I get this year, we will be donating $1500 to the @TheVFoundation for pediatric cancer research. Would love for you to join us &amp; donate at https://t.co/sDX0pKehQx (link in bio). Together we can make a difference 🎗 https://t.co/87UKTzz3tB	Excited to announce our #RBIForResearch campaign. For every RBI I get this year, we will be donating $1500 to the… https://t.co/zhKG8wAwr5	BusterPosey	True	513376	[{'text': 'RBIForResearch', 'indices': [24, 39]}]	Fri Mar 22 17:13:43 +0000 2019	2810	521
+24	GIVE the rainbow. TASTE the rainbow! 🌈 We’re teaming up with @TrueColorsUnite to help end youth homelessness in the LGBTQ+ community. For every LIKE from 6/24/19 – 6/30/19, we will donate $1 up to a max of $10,000 to help support the cause. #Pride2019 https://t.co/a0fxo7tK8t	GIVE the rainbow. TASTE the rainbow! 🌈 We’re teaming up with @TrueColorsUnite to help end youth homelessness in the… https://t.co/edXAy6pd71	Skittles	True	391955	[]	Mon Jun 24 13:45:29 +0000 2019	1587	435
+25	We are still making a push to keep raising bond money for the @bailfundnetwork . If you are at the #LightsForLiberty events and are looking for something to do RIGHT NOW, every single dollars raised will be used to free people from immigration jails: https://t.co/raE8zy0aO6	We are still making a push to keep raising bond money for the @bailfundnetwork . If you are at the… https://t.co/vdmnpwnFuh	migrantbailfund	False	438	[]	Sat Jul 13 01:44:27 +0000 2019	6	5
 26	"Buy A Bag to Give A Bag To America's Law Enforcement Agencies! 
 
+From now through July 12, we will donate a bag of coffee to U.S. law enforcement agencies for every coffee purchase you make. #ThinBlueLine https://t.co/sGyVls6jXR"	"Buy A Bag to Give A Bag To America's Law Enforcement Agencies! 
+
 From now through July 12, we will donate a bag of… https://t.co/ycizK9hjGq"	blckriflecoffee	True	121569	[]	Mon Jul 08 13:04:18 +0000 2019	694	305
-27	Some moments make us grateful that we will not go hungry tonight. Each of us has the ability to help provide basic… https://t.co/OLUXTaZKvv	ShareOurSelves	False	1024	[]	Tue Nov 27 23:15:01 +0000 2018	1	0
-28	It’s #NationalFosterCareMonth. For every retweet of this tweet, we will donate $1 – up to $10K – to the organizatio… https://t.co/UDEpp0v6Il	jefferiesshow	True	49707	[{'text': 'NationalFosterCareMonth', 'indices': [5, 29]}]	Tue May 07 17:56:35 +0000 2019	4620	11865
+27	"Some moments make us grateful that we will not go hungry tonight. Each of us has the ability to help provide basic needs to our neighbors who are struggling. For #GivingTuesday, take one moment to impact many. Donate. Volunteer. Change Lives.
+https://t.co/XYTf1gwfWx https://t.co/9ztDyYRf2q"	Some moments make us grateful that we will not go hungry tonight. Each of us has the ability to help provide basic… https://t.co/OLUXTaZKvv	ShareOurSelves	False	1024	[]	Tue Nov 27 23:15:01 +0000 2018	1	0
+28	It’s #NationalFosterCareMonth. For every retweet of this tweet, we will donate $1 – up to $10K – to the organization @KidsInSpotlight. Even better, @ComedyCentral will match that donation, and @jimjefferies will personally match the donation as well. https://t.co/1a1cf1Kasn	It’s #NationalFosterCareMonth. For every retweet of this tweet, we will donate $1 – up to $10K – to the organizatio… https://t.co/UDEpp0v6Il	jefferiesshow	True	49707	[{'text': 'NationalFosterCareMonth', 'indices': [5, 29]}]	Tue May 07 17:56:35 +0000 2019	4620	11865
 29	"❤️ DONATE NOW AND WIN HUGE ❤️
 
+For every $5 you donate here (https://t.co/3EpIzNHcuu), we’ll give you a free entry to win the ENTIRE Charity Prize Pack.
+
+Here’s a sample of what’s inside. This was VERY GENEROUSLY donated by THE one, THE only, @DubMentality!
+
+Donate now! https://t.co/POXNBN7WLX"	"❤️ DONATE NOW AND WIN HUGE ❤️
+
 For every $5 you donate here (https://t.co/3EpIzNHcuu), we’ll give you a free entry… https://t.co/nGLCVV7dnO"	CrackinWax	False	4649	[]	Thu Jul 11 22:15:52 +0000 2019	8	17
-30	"Us when we realize that there's still time to take advantage of the ""get a test, give a test"" program with Invitae!… https://t.co/P7DJP1omX1"	BeBrightPink	True	24400	[]	Fri Jul 12 17:10:05 +0000 2019	0	1
+30	"Us when we realize that there's still time to take advantage of the ""get a test, give a test"" program with Invitae!
+
+For every genetic test ordered through July 15, Invitae will donate a no-cost genetic test to us. Click the 🔗 to learn more.
+
+https://t.co/Dg4UXyE7dA
+
+📹: @marawa https://t.co/lZoKDZndwh"	"Us when we realize that there's still time to take advantage of the ""get a test, give a test"" program with Invitae!… https://t.co/P7DJP1omX1"	BeBrightPink	True	24400	[]	Fri Jul 12 17:10:05 +0000 2019	0	1
 31	"We've launched a giving program for monthly donors who help us make privacy a priority.
 
+If you pledge a modest amount each month, we will send you exclusive gifts to show our appreciation.
+
+Become a Defender of Privacy today: https://t.co/egm4RTtFgx https://t.co/PkV8PWJPq7"	"We've launched a giving program for monthly donors who help us make privacy a priority.
+
 If you pledge a modest amo… https://t.co/fFc0UoYjvp"	torproject	True	302264	[]	Tue Jul 09 13:15:09 +0000 2019	87	43
-32	Hey Twitter! We are teaming up with the Westborough's 10-year old Baseball All-Star Team support the Jimmy Fund! Co… https://t.co/x0OQlPinM2	coldharborbeer	False	2051	[]	Fri Jul 12 18:34:48 +0000 2019	1	1
+32	"Hey Twitter! We are teaming up with the Westborough's 10-year old Baseball All-Star Team support the Jimmy Fund! Cold Harbor will donate $1 for each pint of ‘Jimmy Fund’ Juice Freak sold on Friday, July 19th. 
+12-9PM
+https://t.co/YDaqaoCQKO https://t.co/ATeKdzQDSR"	Hey Twitter! We are teaming up with the Westborough's 10-year old Baseball All-Star Team support the Jimmy Fund! Co… https://t.co/x0OQlPinM2	coldharborbeer	False	2051	[]	Fri Jul 12 18:34:48 +0000 2019	1	1
 33	"RT…and please read this story. 
 
+We will pick one person and give them and 3 friends Backstage Access and free drinks to next years Parklife. If you are feeling generous, please donate. Every little helps x
+
+https://t.co/NZwU4MzoB1"	"RT…and please read this story. 
+
 We will pick one person and give them and 3 friends Backstage Access and free drin… https://t.co/d7f1ourVdf"	Parklifefest	True	223895	[]	Tue Jul 09 18:16:06 +0000 2019	98	242
-34	We are hosting cup sleeve event by @majorscale_kr for BTS Suga 3/5 to 3/10! Inspired by BTS fans, we have made spec… https://t.co/JkDjDJYLJy	lunacoffeeshop	False	289	[]	Tue Mar 05 14:21:48 +0000 2019	4269	1933
+34	We are hosting cup sleeve event by @majorscale_kr for BTS Suga 3/5 to 3/10! Inspired by BTS fans, we have made special drinks for this event and will donate $1 from the sale of each special drink to UNICEF! #EndViolence  #BTSLoveMyself https://t.co/TiO5lJeob2	We are hosting cup sleeve event by @majorscale_kr for BTS Suga 3/5 to 3/10! Inspired by BTS fans, we have made spec… https://t.co/JkDjDJYLJy	lunacoffeeshop	False	289	[]	Tue Mar 05 14:21:48 +0000 2019	4269	1933

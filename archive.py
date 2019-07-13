@@ -51,6 +51,8 @@ for item in request:
 
 normalized_tweets = json_normalize(tweet_raw)
 
+#normalized_tweets["extended_tweet.full_text"]
+
 #print (len(normalized_tweets))
 
 #print (type(normalized_tweets))
@@ -59,7 +61,7 @@ normalized_tweets = json_normalize(tweet_raw)
 #print (normalized_tweets['text'])
 
 tweet_df = pd.DataFrame(json_normalize(tweet_raw), columns=
-    ['text',
+    ['extended_tweet.full_text',
     'user.screen_name',
     'user.verified',
     'user.followers_count',
@@ -68,8 +70,17 @@ tweet_df = pd.DataFrame(json_normalize(tweet_raw), columns=
     'favorite_count',
     'retweet_count'])
 
+tweet_df
+
+with pd.option_context('display.max_rows', None, 'display.max_columns', None):  # more options can be specified also
+    print(tweet_df)
+
 
 tweet_df.to_csv("30DaySandbox-Jul13.csv", sep='\t')
+
+test = pd.read_csv("30DaySandbox-Jul13.csv", sep='\t')
+
+test
 
 
 
