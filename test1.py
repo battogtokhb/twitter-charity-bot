@@ -1,11 +1,14 @@
 #from tweepy import OAuthHandler, Stream, StreamListener
-import tweepy
+import tweepy # like up here? and a check mark should appear yes ill send u screenshot
+# did it work
 from tweepy.streaming import StreamListener
 import authentication as auth
 import pandas as pd
 from pandas.io.json import json_normalize
 import numpy as np
 import json
+
+
 
 # Test: tweet out a message to our Twitter account
 
