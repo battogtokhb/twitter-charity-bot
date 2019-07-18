@@ -1,14 +1,11 @@
 #from tweepy import OAuthHandler, Stream, StreamListener
-import tweepy # like up here? and a check mark should appear yes ill send u screenshot
-# did it work
+import tweepy
 from tweepy.streaming import StreamListener
 import authentication as auth
 import pandas as pd
 from pandas.io.json import json_normalize
 import numpy as np
 import json
-
-
 
 # Test: tweet out a message to our Twitter account
 
@@ -59,9 +56,7 @@ class MyStreamListener(StreamListener):
         'user.screen_name',
         'created_at',
         'favorite_count',
-        'in_reply_to_status_id',
-        'retweeted_status',
-        'matching_rules'])
+        'retweeted_status'])
         return False
 
     def on_error(self, status_code):
@@ -125,7 +120,7 @@ api = myTweeter.get_api()
 tweet_df = pd.DataFrame()
 tweet_raw = []
 # Finds the most recent tweets including the search keys and adds them to a list
-for tweet in tweepy.Cursor(api.search, q='RT donate').items(5):
+for tweet in tweepy.Cursor(api.search, q='today').items(10):
     tweet_raw.append(tweet._json)
 
 tweet_df = pd.DataFrame(json_normalize(tweet_raw), columns=
@@ -133,7 +128,105 @@ tweet_df = pd.DataFrame(json_normalize(tweet_raw), columns=
     'user.screen_name',
     'created_at',
     'favorite_count',
-    'in_reply_to_status_id',
-    'retweeted_status',
-    'matching_rules'])
-myAnalyzer.print_tweets(tweet_df, ['text', 'user.screen_name', 'created_at'])
+    'retweeted_status'])
+myAnalyzer.print_tweets(tweet_df, ['text', 'retweeted_status'])
+
+pd.set_option('display.max_colwidth', -1)
+pd.set_option('display.max_columns', None)
+test = pd.read_csv("30DaySandbox-Jul14-Q1.csv", sep='\t')
+test
+test2 = pd.read_csv("30DaySandbox-Jul14.csv", sep='\t')
+test2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#### GETTING OUR DATA ####
+
+
+
+
+
+from TwitterAPI import TwitterAPI
+import json
+import urllib.parse
+import pandas as pd
+import authentication as auth
+from pandas.io.json import json_normalize
+
+# Authenticate
+api = TwitterAPI(auth.consumer_key, auth.consumer_secret,  auth.access_token, auth.token_secret)
+
+# Be careful to call this only once, at the beginning
+tweet_raw = []
+
+
+
+### REPEAT HERE ###
+
+# Get request - 2 months at a time
+params = {
+          "query" : "((we\'ll OR (we will)) donate for (every OR each) (retweet OR RT)) OR (for (every OR each) (RT OR retweet) this tweet gets ((we will) OR we\'ll) donate) OR (for (every OR each) (RT OR retweet) ((we will) OR we\'ll) donate)",
+          #            YYYYMMDDHHmm
+          "fromDate": "201905010000",
+          #          YYYYMMDDHHmm
+          "toDate": "201907010000"
+          }
+
+
+request = api.request('tweets/search/fullarchive/:Development', params)
+
+# Status code will tell us if it worked - 200 means its gucci
+count = 0
+# Add the (non-retweeted) tweets to our tweet_raw list
+for item in request:
+    if  'retweeted_status' not in item and item not in tweet_raw:
+        count += 1
+        tweet_raw.append(item)
+    else:
+        original = item['retweeted_status']
+        if original not in tweet_raw:
+            tweet_raw.append(original)
+
+tweet_raw
+
+
+# -- CALL ONCE DONE WITH ENTIRE DATA COLLECTION --
+
+normalized_tweets = json_normalize(tweet_raw)
+
+# Put the full text into the same column
+for index, row in normalized_tweets.iterrows():
+    if pd.isnull(row['extended_tweet.full_text']):
+        normalized_tweets.at[index,'extended_tweet.full_text'] = row['text']
+
+tweet_df = pd.DataFrame(normalized_tweets, columns=
+    ['extended_tweet.full_text',
+    'retweet_count',
+    'user.screen_name',
+    'user.verified',
+    'user.followers_count',
+    'entities.hashtags',
+    'created_at',
+    'favorite_count'
+    ])
+
+
+tweet_df.to_csv("fullArchive.csv", sep='\t')
