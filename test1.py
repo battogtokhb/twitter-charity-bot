@@ -183,17 +183,25 @@ tweet_raw = []
 
 # Get request - 2 months at a time
 params = {
-          "query" : "((we\'ll OR (we will)) donate for (every OR each) (retweet OR RT)) OR (for (every OR each) (RT OR retweet) this tweet gets ((we will) OR we\'ll) donate) OR (for (every OR each) (RT OR retweet) ((we will) OR we\'ll) donate)",
+          # Note: The query can be up to 256 characters for 30 day, but only 128 characters for full archive
+          "query" : ( "((every OR each) (RT OR retweet) ((we will) OR we\'ll) donate)"
+          " OR ((we\'ll OR (we will)) donate (every OR each) (retweet OR RT))" ),
           #            YYYYMMDDHHmm
-          "fromDate": "201905010000",
+          "fromDate": "201905020000",
           #          YYYYMMDDHHmm
-          "toDate": "201907010000"
+          "toDate": "201907080000"
           }
 
+print (params)
 
 request = api.request('tweets/search/fullarchive/:Development', params)
-
-# Status code will tell us if it worked - 200 means its gucci
+print(request.status_code)
+# wait it's 0 that's not good
+# f00k
+# no worries bro, ill
+# damn ok I have to go help my mom make some dinner I'm curious that it didn't add anything
+#(oooo im curious about the count)
+print(count)
 count = 0
 # Add the (non-retweeted) tweets to our tweet_raw list
 for item in request:
